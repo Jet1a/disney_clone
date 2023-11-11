@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans Thai", "NeueHelveticaThai", "NotoSans", "NotoSerif",
+    "Matterhorn", Helvetica, sans-serif;
+  background-color: rgba(240, 240, 240, 0.7);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#global-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  float: none;
+}
+
+#global-nav li {
+  width: 50;
+}
+
+.global-nav-select {
+  margin-left: 2.25em;
+}
+
+nav {
+  background-color: white;
+  padding: 0.252rem;
+  padding-bottom: 1rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.disney-logo-nav {
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.disney-logo-nav u {
+  visibility: hidden;
+}
+
+.login-nav-right {
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+
+.login-nav-right a {
+  font-size: 14px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-item.large {
+  grid-row: span 2;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This will cover the item's area completely */
+  transition: transform 0.5s ease;
+}
+.grid-item:hover img {
+  transform: scale(1.04);
+  /* Optional: zooms the image on hover */
+}
+.text-overlay {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  padding: 40px;
+  width: 100%;
+}
+
+.title,
+.description {
+  display: block;
+}
+.title {
+  font-size: 1.875rem;
+  line-height: 1.2;
+}
+.desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+.text-overlay.top-center {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Center the div */
+  text-align: center;
+}
+
+.text-overlay.bottom-left {
+  bottom: 10px;
+  left: 10px;
+  text-align: left;
+}
+
+.text-overlay.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+}
+.text-overlay.bottom-center {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the div */
+  text-align: center;
+  width: 100%; /* Full width for centering purposes */
+}
+.text-overlay.right-center {
+  top: 50%; /* Center vertically */
+  right: 10px; /* Spacing from the right edge */
+  transform: translateY(
+    -50%
+  ); /* Align center vertically with the middle of the element */
+  text-align: right; /* Align text to the right */
+  width: auto; /* Auto width based on content */
+}
+.bound-products {
+  padding: 20px 86px;
+}
+.bound-header {
+  margin-bottom: 30px;
+  color: black;
+}
+.title span {
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 30px;
+}
+.details-container {
+  height: 100%;
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.item-box {
+  height: 100%;
+}
+.bot-desc {
+  padding: 30px;
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top img {
+  width: auto;
+  height: 100%;
+}
+.top.landscape {
+  height: 370px;
+}
+.wrapper-tr {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.details-container-b {
+  display: flex;
+  flex-direction: column;
+}
+.box-details {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+}
+.description {
+  margin-top: 0.72em;
+}
+.description b {
+  font-weight: 600;
+  font-size: 0.875em;
+}
+.description p {
+  font-size: 0.875em;
+  line-height: 1.3;
+}
+.cta-items-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10px 0 0;
+}
+.cta-items-container ul {
+  margin-top: 10px;
+}
+.cta-items-container li {
+  margin-top: 10px;
+}
+.cta-items-container a {
+  font-weight: 700;
+  text-decoration: underline;
+  line-height: 1;
+  color: #2b4e97;
+  font-size: 0.875em;
+}
+.category {
+  color: #222;
+  margin-top: 1.75rem;
+}
+.category p {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 30px;
+}
+.wrapper li {
+  text-align: left;
+}
+.des-container {
+  padding: 30px;
+  color: black;
+}
+.title-card {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+.des-body {
+  margin-top: 0.72em;
+  font-size: 0.875em;
+  line-height: 1.3;
+}
+.top-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.cta-items-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  pointer-events: all;
+  justify-content: center;
+  margin: 10px 0 0 0;
+}
+.cta-item {
+  margin-top: 12px;
+}
+.cta-button span {
+  text-align: center;
+  display: inline-block;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 24px;
+  height: 48px;
+  min-width: 240px;
+  box-shadow: none;
+  font-size: 1rem;
+  padding: 16px 32px;
+  border: 1px solid #0077da;
+  color: #fff;
+  background-color: #0077da;
+}
+.btn-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.goc-ft {
+  background-color: white;
+  clear: both;
+  margin: 0;
+  padding: 32px 0;
+  z-index: 1;
+}
+#ft-help {
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.ft-logo {
+  display: block;
+  margin: 0 auto;
+  padding-left: 4px;
+  width: 80px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-image: url(../images/nav-logo-dark.png);
+  background-size: 80px 33px;
+}
+#ft-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 6px;
+}
+#ft-about li {
+  padding: 0 12px 4px 8px;
+}
+#ft-about li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #333333;
+}
+#ft-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0 20px;
+}
+#ft-legal li {
+  padding: 4px 20px 0 0;
+}
+#ft-legal li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  color: #333333;
+}
+.ft-copyright {
+  font-size: 0.75em;
+  color: #333333;
+}
+#ft-help a:hover {
+  color: #006ccf;
+}
+@media screen and (max-width: 767px) {
+  .global-nav-select {
+    display: none;
+  }
+}

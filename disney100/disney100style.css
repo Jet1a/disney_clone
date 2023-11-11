@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans Thai", "NeueHelveticaThai", "NotoSans", "NotoSerif",
+    "Matterhorn", Helvetica, sans-serif;
+  background-color: #120029;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+#global-nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  float: none;
+}
+#global-nav li {
+  width: 50;
+}
+.global-nav-select {
+  margin-left: 2.25em;
+}
+nav {
+  background-color: white;
+  padding: 0.252rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+.disney-logo-nav {
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+.disney-logo-nav u {
+  visibility: hidden;
+}
+.login-nav-right {
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+.login-nav-right a {
+  font-size: 14px;
+}
+.main {
+  margin-bottom: 24px;
+}
+.container {
+  position: relative;
+  width: 100%; /* Set the width to 100% to make the image cover the entire container */
+  height: auto; /* Set the desired height */
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make the image cover the entire container */
+}
+
+.content-button a {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff; /* Button background color */
+  color: black;
+  padding: 14px 48px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 24px;
+}
+
+.links-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.links-4 li a {
+  height: 48px;
+  padding: 13px 20px;
+  font-size: 1em;
+  display: block;
+  color: #fff;
+  box-sizing: border-box;
+}
+.links-4 li.active {
+  background-color: #2e0674;
+}
+.links-4 li:hover {
+  background-color: #c8a8ff;
+}
+.bound {
+  padding: 24px 56px;
+  color: #fff;
+  min-width: 260px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.text-output h1 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+.text-output p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.bound-star {
+  margin: 0 auto;
+  padding: 30px 80px 30px;
+  min-width: 260px;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  position: relative;
+}
+.star-banner img {
+  width: 100%;
+  height: 100%;
+}
+.inline-gallery {
+  padding: 18px 56px;
+}
+.inline-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.bound-products {
+  padding: 40px 96px;
+}
+.bound-header {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.title {
+  line-height: 1.2;
+  font-family: "Matterhorn", Helvetica, sans-serif;
+}
+.title span {
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 30px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.details-container {
+  background-color: #fff;
+  max-width: 100%;
+  height: 100%;
+}
+.item-box {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.bot-desc {
+  padding: 30px;
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+.top img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.bot-desc b {
+  text-decoration: underline;
+  color: rgb(61, 133, 198);
+}
+.banner {
+  margin: 1rem 0 2.75rem;
+}
+.banner a {
+  font-size: 1em;
+  color: black;
+}
+.banner span {
+  padding: 13px 36px;
+  background-color: #fff;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.wrapper-sc {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.details-container-a {
+  max-width: 100%;
+  height: 100%;
+}
+.bot-desc span {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.875rem;
+}
+.wrapper-tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.details-container-b {
+  background-color: #fff;
+  max-width: 100%;
+  height: 100%;
+}
+.description {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-top: 0.72em;
+  line-height: 1.3;
+}
+.description b {
+  font-weight: 600;
+  font-size: 0.875em;
+}
+.description p {
+  font-size: 0.875em;
+  line-height: 1.3;
+}
+.cta-items-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10px 0 0;
+}
+.cta-items-container ul {
+  margin-top: 10px;
+}
+.cta-items-container li {
+  margin-top: 10px;
+}
+.cta-items-container a {
+  font-weight: 700;
+  text-decoration: underline;
+  line-height: 1;
+  color: #2b4e97;
+  font-size: 0.875em;
+}
+.category {
+  color: #222;
+  margin-top: 1.25rem;
+}
+.category p {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bound-social {
+  padding: 28px 0;
+}
+.goc-ft {
+  background-color: white;
+  clear: both;
+  margin: 0;
+  padding: 32px 0;
+  z-index: 1;
+}
+#ft-help {
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.ft-logo {
+  display: block;
+  margin: 0 auto;
+  padding-left: 4px;
+  width: 80px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-image: url(../images/nav-logo-dark.png);
+  background-size: 80px 33px;
+}
+#ft-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0 6px;
+}
+#ft-about li {
+  padding: 0 12px 4px 8px;
+}
+#ft-about li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #333333;
+}
+#ft-legal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 0 20px;
+}
+#ft-legal li {
+  padding: 4px 20px 0 0;
+}
+#ft-legal li a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2;
+  color: #333333;
+}
+.ft-copyright {
+  font-size: 0.75em;
+  color: #333333;
+}
+#ft-help a:hover {
+  color: #006ccf;
+}
+@media screen and (max-width: 767px) {
+  .global-nav-select {
+    display: none;
+  }
+}
