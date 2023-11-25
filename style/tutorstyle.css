@@ -167,6 +167,9 @@ li {
 #img-flex .first img {
   object-fit: contain;
 }
+#img-flex p{
+  text-align: center;
+}
 #img-flex .second img {
   object-fit: cover;
 }

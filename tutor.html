@@ -74,11 +74,11 @@
     <div class="second-style">
       <div class="select-box">
         <ul class="ancient">
-          <li class="child">first-child()</li>
+          <li class="child">first-child</li>
           <li class="child">nth-child(2)</li>
           <li class="child">nth-child(3)</li>
           <li class="child">nth-child(4)</li>
-          <li class="child">last-child()</li>
+          <li class="child">last-child</li>
         </ul>
         <ul class="ancient">
           <li class="sibling">odd</li>
@@ -88,10 +88,11 @@
           <li class="sibling">odd</li>
         </ul>
         <p style="text-align: center; margin-top: 1rem;">
-          :first-child background-color: tomato<br> 
+          :first-child background-color: tomato<br>
           :nth-child(2) background-color: orange <br>
           :last-child background-color: purple;
-          <br>:nth-child(even) background-color: chocolate;</p>
+          <br>:nth-child(even) background-color: chocolate;
+        </p>
       </div>
       <div class="script-box" style="text-align: center">
         <div class="top" style="margin-top: 0;">
@@ -105,7 +106,6 @@
         </div>
         <ul style="text-align: center">
           <li>
-
             <b>:nth-child(odd)</b> selects all odd-numbered child elements.
           </li>
           <li>
@@ -123,25 +123,42 @@
       <ul id="img-flex">
         <li class="first">
           <img src="images/ragdoll-cat-breed-vase.jpg" alt="ragdoll-cat-breed" />
+          <p>object-fit: contain</p>
         </li>
         <li class="second">
           <img src="images/ragdoll-cat-breed-vase.jpg" alt="ragdoll-cat-breed" />
+          <p>object-fit: cover</p>
         </li>
         <li class="third">
           <img src="images/ragdoll-cat-breed-vase.jpg" alt="ragdoll-cat-breed" />
+          <p>object-fit: none</p>
         </li>
       </ul>
-      <div class="script-box" style="text-align: center">
-        <div class="top">
+      <div class="script-box" style="text-align: center;">
+        <div class="top" style=" margin-top: 0px">
           <h3>Object Fit</h3>
         </div>
         <div class="desc">
-          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
-            dolor. Sapiente saepe pariatur impedit iure illo. Consequatur
-            voluptates ab maiores dolor veniam iste ut incidunt fuga.
-            Quibusdam fuga dignissimos eius animi. Voluptatum sit libero eaque
-            quibusdam illum quod! Cupiditate ut, iure repudiandae illo
-            distinctio ex. Iste est laudantium ipsa voluptate!</span>
+          <span>คุณสมบัติ CSS ที่ใช้สำหรับปรับขนาดองค์ประกอบของ &lt; img &gt; หรือ &lt; video &gt;
+            มีประโยชน์เมื่ออัตราส่วนกว้างยาวของเนื้อหาและอัตราส่วนกว้างยาวของคอนเทนเนอร์ไม่ตรงกัน
+          </span>
+          <ul style="text-align: center;  margin-top: 2rem">
+            <li>
+              <b>fill</b> เนื้อหาจะถูกปรับขนาดให้เต็มคอนเทนเนอร์โดยสมบูรณ์ ซึ่งอัตราส่วนภาพอาจไม่พอดี
+            </li>
+            <li>
+              <b>contain</b> เนื้อหาจะถูกปรับขนาดให้พอดีกับคอนเทนเนอร์ในขณะที่ยังคงอัตราส่วนภาพไว้ แต่อาจไม่ครอบคลุมทั้งคอนเทนเนอร์ทําให้มีพื้นที่ว่าง
+            </li>
+            <li>
+              <b>cover</b> เนื้อหาจะถูกปรับขนาดให้ครอบคลุมคอนเทนเนอร์ทั้งหมดในขณะที่ยังคงอัตราส่วนภาพไว้ ซึ่งอาจส่งผลให้บางส่วนของเนื้อหาถูกครอบตัด
+            </li>
+            <li>
+              <b>none (default)</b> เนื้อหายังคงขนาดเดิมโดยไม่ต้องปรับขนาดใด ๆ อาจล้นคอนเทนเนอร์หรือปล่อยให้พื้นที่ว่างขึ้นอยู่กับอัตราส่วนภาพ
+            </li>
+            <li>
+              <b>scale-down</b> เนื้อหาจะถูกปรับขนาดให้เล็กลงตามขนาดที่จริงเพื่อให้พอดีกับคอนเทนเนอร์บรรจุ จะไม่ปรับขนาดหากไม่จําเป็น
+            </li>
+          </ul>
         </div>
       </div>
     </div>
