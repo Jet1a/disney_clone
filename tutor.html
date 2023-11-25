@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Css Summarize</title>
+  <link rel="stylesheet" href="style/tutorstyle.css" />
+</head>
+
+<body>
+  <div id="header-title">
+    <section>
+      <div class="title">
+        <h3>Let's explore</h3>
+        <h1>cascading style sheets</h1>
+      </div>
+    </section>
+  </div>
+  <section id="first-section">
+    <div class="first-style">
+      <div class="show-case">
+        <div class="box1">
+          <img src="images/wepik-export-2023112116275897bY.png" alt="sweet-pastry-assortment-top-view" />
+          <p><b>transform: scale(1.1);</b></p>
+          <p>transition: 0.5s ease</p>
+        </div>
+        <div class="box2">
+          <img src="images/wepik-export-2023112116275897bY.png" alt="sweet-pastry-assortment-top-view" />
+          <p><b>transform: rotateX(.5turn)</b></p>
+          <p>transition: 1s ease-out .5s;</p>
+        </div>
+        <div class="box3">
+          <img src="images/wepik-export-2023112116275897bY.png" alt="sweet-pastry-assortment-top-view" />
+          <p><b>transform: translate(15px, -10%)</b></p>
+          <p>transition: 200ms linear 50ms;</p>
+        </div>
+      </div>
+      <div class="script-box" style="text-align: center">
+        <div class="top">
+          <h3>Transition & Transform</h3>
+        </div>
+        <div class="desc">
+          <span>Transition เป็นคุณสมบัติใน CSS <br />
+            ที่ช่วยให้สามารถเปลี่ยนค่าของคุณสมบัติ CSS
+            ได้อย่างราบรื่นในช่วงเวลาที่ระบุ <br />
+            ใช้สําหรับการสร้างภาพเคลื่อนไหวที่ราบรื่นโดยค่อยๆเปลี่ยนค่าของคุณสมบัติ
+            CSS เมื่อเวลาผ่านไป
+          </span>
+
+          <ul style="text-align: center">
+            <li>
+              <br />
+              <b>Property:</b> ระบุคุณสมบัติ CSS ที่มีผลต่อการเปลี่ยนแปลง
+            </li>
+            <li>
+              <b>Duration:</b> ระบุระยะเวลา
+              ในการเคลื่อนไหวเมื่อเวลาผ่านไปจนเสร็จ (e.g., 1s for 1 second).
+            </li>
+            <li>
+              <b>Timing Function:</b> กําหนดความเร่งของการเปลี่ยนแปลง (e.g.,
+              ease, linear, ease-in-out).
+            </li>
+            <li>
+              <b>Delay:</b>
+              คุณสมบัติเสริมเพื่อเพิ่มความล่าช้าก่อนที่การเปลี่ยนแปลงจะเริ่มขึ้น
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="second-section">
+    <div class="second-style">
+      <div class="select-box">
+        <ul class="ancient">
+          <li class="child">first-child()</li>
+          <li class="child">nth-child(2)</li>
+          <li class="child">nth-child(3)</li>
+          <li class="child">nth-child(4)</li>
+          <li class="child">last-child()</li>
+        </ul>
+        <ul class="ancient">
+          <li class="sibling">odd</li>
+          <li class="sibling">even</li>
+          <li class="sibling">odd</li>
+          <li class="sibling">even</li>
+          <li class="sibling">odd</li>
+        </ul>
+        <p style="text-align: center; margin-top: 1rem;">
+          :first-child background-color: tomato<br> 
+          :nth-child(2) background-color: orange <br>
+          :last-child background-color: purple;
+          <br>:nth-child(even) background-color: chocolate;</p>
+      </div>
+      <div class="script-box" style="text-align: center">
+        <div class="top" style="margin-top: 0;">
+          <h3>nth-child Select</h3>
+        </div>
+        <div class="desc">
+          <span>คือ pseudo-class
+            ที่ใช้เพื่อเลือกและจัดรูปแบบองค์ประกอบตามตําแหน่งภายในองค์ประกอบหลัก
+            ช่วยให้สามารถกําหนดเป้าหมายองค์ประกอบที่ต้องการแก้ไข เฉพาะ เจาะจงได้
+            ให้ประสิทธิภาพในการนําสไตล์ไปใช้กับองค์ประกอบเฉพาะในลักษณะที่ยืดหยุ่นตามตําแหน่งในโครงสร้างเอกสาร</span>
+        </div>
+        <ul style="text-align: center">
+          <li>
+
+            <b>:nth-child(odd)</b> selects all odd-numbered child elements.
+          </li>
+          <li>
+            <b>:nth-child(even)</b> selects all even-numbered child elements.
+          </li>
+          <li>
+            <b>:nth-child(3n)</b> selects every third child element.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="third-section">
+    <div class="third-style">
+      <ul id="img-flex">
+        <li class="first">
+          <img src="images/ragdoll-cat-breed-vase.jpg" alt="ragdoll-cat-breed" />
+        </li>
+        <li class="second">
+          <img src="images/ragdoll-cat-breed-vase.jpg" alt="ragdoll-cat-breed" />
+        </li>
+        <li class="third">
+          <img src="images/ragdoll-cat-breed-vase.jpg" alt="ragdoll-cat-breed" />
+        </li>
+      </ul>
+      <div class="script-box" style="text-align: center">
+        <div class="top">
+          <h3>Object Fit</h3>
+        </div>
+        <div class="desc">
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+            dolor. Sapiente saepe pariatur impedit iure illo. Consequatur
+            voluptates ab maiores dolor veniam iste ut incidunt fuga.
+            Quibusdam fuga dignissimos eius animi. Voluptatum sit libero eaque
+            quibusdam illum quod! Cupiditate ut, iure repudiandae illo
+            distinctio ex. Iste est laudantium ipsa voluptate!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

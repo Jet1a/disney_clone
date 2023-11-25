@@ -21,7 +21,7 @@ ul,
 li {
   list-style: none;
 }
-
+/*----- Nav-bar -----*/
 #global-nav {
   display: flex;
   justify-content: start;
@@ -70,11 +70,10 @@ nav ul li a {
 .login-nav-right a {
   font-size: 14px;
 }
-
+/*----- Main -----*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* Two columns */
   grid-auto-rows: minmax(100px, auto);
 }
 
@@ -93,12 +92,10 @@ nav ul li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* This will cover the item's area completely */
   transition: transform 0.5s ease;
 }
 .grid-item:hover img {
   transform: scale(1.04);
-  /* Optional: zooms the image on hover */
 }
 .text-overlay {
   position: absolute;
@@ -144,21 +141,19 @@ nav ul li a {
 .text-overlay.bottom-center {
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%); /* Center the div */
+  transform: translateX(-50%); 
   text-align: center;
-  width: 100%; /* Full width for centering purposes */
+  width: 100%; 
 }
 .text-overlay.right-center {
-  top: 50%; /* Center vertically */
-  right: 10px; /* Spacing from the right edge */
-  transform: translateY(
-    -50%
-  ); /* Align center vertically with the middle of the element */
-  text-align: right; /* Align text to the right */
-  width: auto; /* Auto width based on content */
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%); 
+  text-align: right; 
+  width: auto; 
 }
 .bound-products {
-  padding: 20px 86px;
+  padding: 20px 64px;
 }
 .bound-header {
   margin-bottom: 30px;
@@ -186,22 +181,24 @@ nav ul li a {
   text-align: center;
   font-size: large;
 }
+.top.landscape {
+  width: 100%;
+  height: auto;
+}
 .top {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .top img {
   width: auto;
   height: 100%;
-}
-.top.landscape {
-  height: 370px;
+  object-fit: cover;
 }
 .wrapper-tr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
 .details-container-b {
   display: flex;
@@ -211,7 +208,6 @@ nav ul li a {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
   width: 100%;
 }
 .description {
@@ -377,8 +373,104 @@ nav ul li a {
 #ft-help a:hover {
   color: #006ccf;
 }
-@media screen and (max-width: 767px) {
+/*----- Responsive -----*/
+
+@media screen and (max-width: 380px) {
+  .text-overlay {
+    padding: 20px;
+  }
+  .text-overlay .title p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .text-overlay .desc p {
+    font-size: 0.5rem;
+    line-height: 1.2;
+  }
+  .title h2 span {
+    line-height: 1.25rem;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+  .box-details {
+    padding: 20px;
+    text-align: left;
+  }
+  .wrapper {
+    margin-top: 0;
+  }
+  .des-container {
+    padding: 20px;
+  }
+  .bound-products {
+    padding: 16px 18px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .bound-products {
+    padding: 16px 20px;
+  }
+  .title h2 span {
+    line-height: 1.75rem;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+  .text-overlay .title p {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+}
+
+
+@media screen and (max-width: 570px) {
   .global-nav-select {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: rgb(200, 200, 200) solid 1px;
+  }
+  #global-nav li {
+    width: 100%;
+  }
+  .login-nav-right {
+    padding: 1rem 0;
+    border-bottom: black solid 1px;
+    display: block;
+  }
+  #global-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .disney-logo-nav {
+    margin: 0;
+    border-bottom: 2px black solid;
+  }
+  nav {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .login-nav-right {
     display: none;
+  }
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .top img {
+    width: 100%;
+    height: auto;
+  }
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 1380px) {
+  .wrapper-tr {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box-details {
+    text-align: center;
   }
 }

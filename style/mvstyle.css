@@ -15,6 +15,7 @@ ul,
 li {
   list-style: none;
 }
+/*----- Nav-bar -----*/
 #global-nav {
   display: flex;
   justify-content: start;
@@ -53,6 +54,7 @@ nav ul li a {
 .login-nav-right a {
   font-size: 14px;
 }
+/*----- Main -----*/
 .main {
   padding: 0px 24px 24px;
 }
@@ -80,11 +82,11 @@ nav ul li a {
 .blocks-flex {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1.75rem 1.25rem;
+  gap: 1rem 1.25rem;
 }
 
 .blocks-flex img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 4px;
@@ -161,8 +163,63 @@ nav ul li a {
 #ft-help a:hover {
   color: #006ccf;
 }
-@media screen and (max-width: 767px) {
+/*----- Responsive -----*/
+
+@media screen and (max-width: 600px) {
   .global-nav-select {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: rgb(200, 200, 200) solid 1px;
+  }
+  #global-nav li {
+    width: 100%;
+  }
+  .login-nav-right {
+    padding: 1rem 0;
+    border-bottom: black solid 1px;
+    display: block;
+  }
+  #global-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .disney-logo-nav {
+    margin: 0;
+    border-bottom: 2px black solid;
+  }
+  nav {
+    padding: 0;
+  }
+  .blocks-flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bound {
+    padding: 0 20px 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blocks-flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .main {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .login-nav-right {
     display: none;
+  }
+  .blocks-flex {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main {
+    padding: 0;
+  }
+  .bound {
+    padding: 0 48px 24px;
   }
 }
