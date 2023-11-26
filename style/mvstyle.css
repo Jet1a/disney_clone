@@ -4,17 +4,21 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Noto Sans Thai", "NeueHelveticaThai", "NotoSans", "NotoSerif",
     "Matterhorn", Helvetica, sans-serif;
 }
+
 a {
   text-decoration: none;
 }
+
 ul,
 li {
   list-style: none;
 }
+
 /*----- Nav-bar -----*/
 #global-nav {
   display: flex;
@@ -22,63 +26,80 @@ li {
   align-items: center;
   float: none;
 }
+
 #global-nav li {
   width: 50;
 }
+
 .global-nav-select {
   margin-left: 2.25em;
 }
+
 nav {
   background-color: white;
   padding: 0.252rem;
 }
+
 nav ul li {
   list-style: none;
 }
+
 nav ul li a {
   color: black;
   font-weight: 600;
   font-size: 14px;
 }
+
 .disney-logo-nav {
   padding-top: 0.5rem;
   margin-left: 1rem;
 }
+
 .disney-logo-nav u {
   visibility: hidden;
 }
+
 .login-nav-right {
   margin-left: auto;
   margin-right: 1.5rem;
 }
+
 .login-nav-right a {
   font-size: 14px;
 }
+
 /*----- Main -----*/
 .main {
   padding: 0px 24px 24px;
 }
+
 .bound {
   padding: 0px 80px 40px;
 }
+
 .bound-header {
   line-height: 1.2;
   margin-bottom: 30px;
 }
+
 .bound-title {
   margin: 30px 0;
 }
+
 .bound-title span {
   font-size: 30px;
   font-weight: 400;
 }
+
 .peak-header span {
   font-size: 1.875rem;
   font-weight: 400;
 }
+
 .bound-blocks {
   padding: 2rem auto;
 }
+
 .blocks-flex {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -91,9 +112,11 @@ nav ul li a {
   object-fit: cover;
   border-radius: 4px;
 }
+
 .blocks-container {
   margin: 1rem 0;
 }
+
 .blocks-title {
   margin: 8px 0 0;
   color: #1d1e1f;
@@ -101,6 +124,7 @@ nav ul li a {
   letter-spacing: 0;
   line-height: 1.25rem;
 }
+
 .goc-ft {
   background-color: white;
   clear: both;
@@ -108,6 +132,7 @@ nav ul li a {
   padding: 32px 0;
   z-index: 1;
 }
+
 #ft-help {
   margin: 0 auto;
   padding: 0 24px;
@@ -115,6 +140,7 @@ nav ul li a {
   margin-top: 10px;
   box-sizing: border-box;
 }
+
 .ft-logo {
   display: block;
   margin: 0 auto;
@@ -125,21 +151,25 @@ nav ul li a {
   background-image: url(../images/nav-logo-dark.png);
   background-size: 80px 33px;
 }
+
 #ft-about {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 0 6px;
 }
+
 #ft-about li {
   padding: 0 12px 4px 8px;
 }
+
 #ft-about li a {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
   color: #333333;
 }
+
 #ft-legal {
   display: flex;
   justify-content: center;
@@ -147,24 +177,27 @@ nav ul li a {
   flex-wrap: wrap;
   padding: 0 0 20px;
 }
+
 #ft-legal li {
   padding: 4px 20px 0 0;
 }
+
 #ft-legal li a {
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
   color: #333333;
 }
+
 .ft-copyright {
   font-size: 0.75em;
   color: #333333;
 }
+
 #ft-help a:hover {
   color: #006ccf;
 }
 /*----- Responsive -----*/
-
 
 @media screen and (min-width: 320px) {
   .blocks-flex {
@@ -172,9 +205,9 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 560px) {
   .bound {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 }
 
@@ -222,12 +255,12 @@ nav ul li a {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   .blocks-flex {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
   .blocks-flex {
     grid-template-columns: repeat(5, 1fr);
   }

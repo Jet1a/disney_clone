@@ -464,6 +464,7 @@ nav ul li a {
   color: #006ccf;
 }
 /*----- Responsive -----*/
+
 @media screen and (max-width: 375px) {
   .one-id-banner img {
     display: none;
@@ -495,7 +496,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 710px) {
-  
   .content-title {
     padding: 0;
   }

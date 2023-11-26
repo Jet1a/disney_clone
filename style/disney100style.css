@@ -363,6 +363,7 @@ nav ul li a {
   color: #006ccf;
 }
 /*----- Responsive -----*/
+
 @media screen and (max-width: 485px) {
   .links-4 {
     overflow: scroll;
@@ -450,5 +451,4 @@ nav ul li a {
   .wrapper-sc{
     grid-template-columns: repeat(5, 1fr);
   }
-  
 }
