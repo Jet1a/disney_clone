@@ -21,6 +21,7 @@ ul,
 li {
   list-style: none;
 }
+
 /*----- Nav-bar -----*/
 #global-nav {
   display: flex;
@@ -70,6 +71,7 @@ nav ul li a {
 .login-nav-right a {
   font-size: 14px;
 }
+
 /*----- Main -----*/
 .grid-container {
   display: grid;
@@ -94,9 +96,11 @@ nav ul li a {
   object-fit: cover;
   transition: transform 0.5s ease;
 }
+
 .grid-item:hover img {
   transform: scale(1.04);
 }
+
 .text-overlay {
   position: absolute;
   color: white;
@@ -109,10 +113,12 @@ nav ul li a {
 .description {
   display: block;
 }
+
 .title {
   font-size: 1.875rem;
   line-height: 1.2;
 }
+
 .desc {
   font-size: 1rem;
   line-height: 1.5;
@@ -138,32 +144,38 @@ nav ul li a {
   right: 10px;
   text-align: right;
 }
+
 .text-overlay.bottom-center {
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   text-align: center;
-  width: 100%; 
+  width: 100%;
 }
+
 .text-overlay.right-center {
   top: 50%;
-  right: 10px; 
-  transform: translateY(-50%); 
-  text-align: right; 
-  width: auto; 
+  right: 10px;
+  transform: translateY(-50%);
+  text-align: right;
+  width: auto;
 }
+
 .bound-products {
   padding: 20px 64px;
 }
+
 .bound-header {
   margin-bottom: 30px;
   color: black;
 }
+
 .title span {
   font-weight: 400;
   letter-spacing: 0;
   font-size: 30px;
 }
+
 .details-container {
   height: 100%;
   border-radius: 0;
@@ -172,67 +184,82 @@ nav ul li a {
   overflow: hidden;
   box-sizing: border-box;
 }
+
 .item-box {
   height: 100%;
 }
+
 .bot-desc {
   padding: 30px;
   color: black;
   text-align: center;
   font-size: large;
 }
+
 .top.landscape {
   width: 100%;
   height: auto;
 }
+
 .top {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
+
 .top img {
   width: auto;
   height: 100%;
   object-fit: cover;
 }
+
 .wrapper-tr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .details-container-b {
   display: flex;
   flex-direction: column;
 }
+
 .box-details {
   padding: 30px;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 .description {
   margin-top: 0.72em;
 }
+
 .description b {
   font-weight: 600;
   font-size: 0.875em;
 }
+
 .description p {
   font-size: 0.875em;
   line-height: 1.3;
 }
+
 .cta-items-container {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin: 10px 0 0;
 }
+
 .cta-items-container ul {
   margin-top: 10px;
 }
+
 .cta-items-container li {
   margin-top: 10px;
 }
+
 .cta-items-container a {
   font-weight: 700;
   text-decoration: underline;
@@ -240,10 +267,12 @@ nav ul li a {
   color: #2b4e97;
   font-size: 0.875em;
 }
+
 .category {
   color: #222;
   margin-top: 1.75rem;
 }
+
 .category p {
   text-transform: uppercase;
   font-weight: lighter;
@@ -251,33 +280,40 @@ nav ul li a {
   font-weight: 700;
   line-height: 1.3;
 }
+
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 30px;
 }
+
 .wrapper li {
   text-align: left;
 }
+
 .des-container {
   padding: 30px;
   color: black;
 }
+
 .title-card {
   font-size: 1.25em;
   line-height: 1.2;
 }
+
 .des-body {
   margin-top: 0.72em;
   font-size: 0.875em;
   line-height: 1.3;
 }
+
 .top-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 .cta-items-btn-container {
   display: flex;
   flex-direction: column;
@@ -286,9 +322,11 @@ nav ul li a {
   justify-content: center;
   margin: 10px 0 0 0;
 }
+
 .cta-item {
   margin-top: 12px;
 }
+
 .cta-button span {
   text-align: center;
   display: inline-block;
@@ -305,12 +343,14 @@ nav ul li a {
   color: #fff;
   background-color: #0077da;
 }
+
 .btn-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
+
 .goc-ft {
   background-color: white;
   clear: both;
@@ -318,6 +358,7 @@ nav ul li a {
   padding: 32px 0;
   z-index: 1;
 }
+
 #ft-help {
   margin: 0 auto;
   padding: 0 24px;
@@ -325,6 +366,7 @@ nav ul li a {
   margin-top: 10px;
   box-sizing: border-box;
 }
+
 .ft-logo {
   display: block;
   margin: 0 auto;
@@ -335,21 +377,25 @@ nav ul li a {
   background-image: url(../images/nav-logo-dark.png);
   background-size: 80px 33px;
 }
+
 #ft-about {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 16px 0 6px;
 }
+
 #ft-about li {
   padding: 0 12px 4px 8px;
 }
+
 #ft-about li a {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
   color: #333333;
 }
+
 #ft-legal {
   display: flex;
   justify-content: center;
@@ -357,51 +403,63 @@ nav ul li a {
   flex-wrap: wrap;
   padding: 0 0 20px;
 }
+
 #ft-legal li {
   padding: 4px 20px 0 0;
 }
+
 #ft-legal li a {
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
   color: #333333;
 }
+
 .ft-copyright {
   font-size: 0.75em;
   color: #333333;
 }
+
 #ft-help a:hover {
   color: #006ccf;
 }
+
 /*----- Responsive -----*/
 
 @media screen and (max-width: 380px) {
   .text-overlay {
     padding: 20px;
   }
+
   .text-overlay .title p {
     font-size: 1rem;
     line-height: 1.2;
   }
+
   .text-overlay .desc p {
     font-size: 0.5rem;
     line-height: 1.2;
   }
+
   .title h2 span {
     line-height: 1.25rem;
     font-size: 1.2rem;
     letter-spacing: 0;
   }
+
   .box-details {
     padding: 20px;
     text-align: left;
   }
+
   .wrapper {
     margin-top: 0;
   }
+
   .des-container {
     padding: 20px;
   }
+
   .bound-products {
     padding: 16px 18px;
   }
@@ -411,19 +469,20 @@ nav ul li a {
   .bound-products {
     padding: 16px 20px;
   }
+
   .title h2 span {
     line-height: 1.75rem;
     font-size: 1.5rem;
     letter-spacing: 0;
   }
+
   .text-overlay .title p {
     font-size: 1.875rem;
     line-height: 1.2;
   }
 }
 
-
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 767px) {
   .global-nav-select {
     display: block;
     margin: 0;
@@ -431,45 +490,50 @@ nav ul li a {
     padding: 1rem 0;
     border-bottom: rgb(200, 200, 200) solid 1px;
   }
+
   #global-nav li {
     width: 100%;
   }
+
   .login-nav-right {
     padding: 1rem 0;
     border-bottom: black solid 1px;
     display: block;
   }
+
   #global-nav {
     flex-direction: column;
     text-align: center;
   }
+
   .disney-logo-nav {
     margin: 0;
     border-bottom: 2px black solid;
   }
+
   nav {
     padding: 0;
   }
-}
-@media screen and (max-width: 767px) {
-  .login-nav-right {
-    display: none;
-  }
+
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .top img {
     width: 100%;
     height: auto;
   }
+
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 @media screen and (max-width: 1380px) {
   .wrapper-tr {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .box-details {
     text-align: center;
   }

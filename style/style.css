@@ -464,7 +464,6 @@ nav ul li a {
   color: #006ccf;
 }
 /*----- Responsive -----*/
-
 @media screen and (max-width: 375px) {
   .one-id-banner img {
     display: none;
@@ -472,35 +471,31 @@ nav ul li a {
   .one-id-banner-mb {
     display: block;
   }
+  .grid-card-container ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .slide-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hotstar {
+    padding: 20px 24px 10px;
+  }
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hotstar-peak {
+    padding: 24px 16px 10px;
+  }
+  .hotstar-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .youtube-peak {
+    padding: 24px;
+  }
 }
 
-@media screen and (max-width: 565px) {
-  .global-nav-select {
-    display: block;
-    margin: 0;
-    width: 100%;
-    padding: 1rem 0;
-    border-bottom: rgb(200, 200, 200) solid 1px;
-  }
-  #global-nav li {
-    width: 100%;
-  }
-  .login-nav-right {
-    padding: 1rem 0;
-    border-bottom: black solid 1px;
-    display: block;
-  }
-  #global-nav {
-    flex-direction: column;
-    text-align: center;
-  }
-  .disney-logo-nav {
-    margin: 0;
-    border-bottom: 2px black solid;
-  }
-  nav {
-    padding: 0;
-  }
+@media screen and (max-width: 710px) {
+  
   .content-title {
     padding: 0;
   }
@@ -594,6 +589,9 @@ nav ul li a {
   .hotstar-grid li:nth-child(4) {
     display: none;
   }
+  .hotstar-grid li:last-child {
+    display: none;
+  }
   .youtube-peak {
     padding: 24px;
   }
@@ -630,10 +628,36 @@ nav ul li a {
     font-size: 1.25rem;
     line-height: 1.7;
   }
+  .brands-banner img {
+    width: 100%;
+  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .global-nav-select {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: rgb(200, 200, 200) solid 1px;
+  }
+  #global-nav li {
+    width: 100%;
+  }
   .login-nav-right {
-    display: none;
+    padding: 1rem 0;
+    border-bottom: black solid 1px;
+    display: block;
+  }
+  #global-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .disney-logo-nav {
+    margin: 0;
+    border-bottom: 2px black solid;
+  }
+  nav {
+    padding: 0;
   }
   .content-overlay {
     text-align: center;
@@ -666,16 +690,6 @@ nav ul li a {
   .grid-card-container {
     margin-top: 1rem;
   }
-  .grid-card-container ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-  .slide-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25em;
-  }
   .hotstar {
     padding: 40px 50px 10px;
   }
@@ -684,13 +698,6 @@ nav ul li a {
   }
   .title-peak h2 span {
     font-size: 1em;
-  }
-  .hotstar-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-  }
-  .hotstar-grid li:last-child {
-    display: none;
   }
   .hotstar-grid img {
     width: 100%;
@@ -706,7 +713,6 @@ nav ul li a {
   .youtube-flex img {
     border-radius: 4px;
     height: auto;
-    width: 100%;
   }
   .brands-banner img {
     width: 80%;
