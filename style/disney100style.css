@@ -363,33 +363,7 @@ nav ul li a {
   color: #006ccf;
 }
 /*----- Responsive -----*/
-
 @media screen and (max-width: 485px) {
-  .global-nav-select {
-    display: block;
-    margin: 0;
-    width: 100%;
-    padding: 1rem 0;
-    border-bottom: rgb(200, 200, 200) solid 1px;
-  }
-  #global-nav li {
-    width: 100%;
-  }
-  .login-nav-right {
-    padding: 1rem 0;
-    display: block;
-  }
-  #global-nav {
-    flex-direction: column;
-    text-align: center;
-  }
-  .disney-logo-nav {
-    margin: 0;
-    border-bottom: 2px black solid;
-  }
-  nav {
-    padding: 0;
-  }
   .links-4 {
     overflow: scroll;
     position: relative;
@@ -416,18 +390,41 @@ nav ul li a {
   .bound {
     padding: 16px 18px;
   }
-  .bound-products {
-    padding: 16px 18px;
-  }
   .bound-star {
     padding: 25px 18px 24px;
   }
 }
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 715px) {
   .global-nav-select {
-    display: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: rgb(200, 200, 200) solid 1px;
   }
+  #global-nav li {
+    width: 100%;
+  }
+  .login-nav-right {
+    padding: 1rem 0;
+    display: block;
+  }
+  #global-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .disney-logo-nav {
+    margin: 0;
+    border-bottom: 2px black solid;
+  }
+  nav {
+    padding: 0;
+  }
+  .bound-products {
+    padding: 16px 24px;
+  }
+}
+@media screen and (max-width: 767px) {
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -438,12 +435,13 @@ nav ul li a {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 760px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
-  .bound-products {
-    padding: 24px 48px;
+}
+@media screen and (min-width: 960px) {
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
